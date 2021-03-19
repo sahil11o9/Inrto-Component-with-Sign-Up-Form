@@ -1,0 +1,131 @@
+:root {
+  --shadow2: 0 10px 9px rgba(8, 8, 8, 0.698);
+}
+html {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../All/bg-intro-desktop.png);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  color: white;
+}
+p {
+  color: whitesmoke;
+}
+.container {
+  display: flex;
+  margin-top: 4rem;
+}
+.box1 {
+  text-align: left;
+  padding: 10rem;
+  padding-right: 0;
+}
+.box1 h1 {
+  font-size: 3rem;
+}
+.box1 p {
+  font-size: 1rem;
+}
+.box2 {
+  display: inline;
+  margin-left: 13rem;
+  margin-right: 7rem;
+}
+#dabbu {
+  box-shadow: var(--shadow2);
+  z-index: 5;
+}
+.box2 h6 {
+  border: 2px solid hsl(248, 32%, 49%);
+  background-color: hsl(248, 32%, 49%);
+  padding: 0.5rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* border-radius: .6rem; */
+  font-size: 1.3rem;
+}
+.box2 h6 .first {
+  color: whitesmoke;
+  font-weight: 900;
+}
+.box2 h6 .second {
+  color: whitesmoke;
+  font-weight: 100;
+}
+form {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  z-index: 2;
+  border: 2px solid white;
+  border-radius: 0.6rem;
+  padding-bottom: 2rem;
+  box-shadow: var(--shadow2);
+  margin-top: 2rem;
+}
+form input {
+  padding: 1rem;
+  padding-right: 12rem;
+  margin: 0.5rem;
+}
+form p {
+  font-size: small;
+  color: black;
+  text-align: center;
+}
+form p.formy {
+  color: gray;
+}
+form span {
+  color: red;
+}
+button {
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  padding: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding-left: 6rem;
+  padding-right: 7.6rem;
+  margin: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--shadow2);
+}
+button:hover {
+  background-color: hsla(154, 59%, 51%, 0.459);
+}
+
+/* Media Queries */
+@media screen and (max-width: 375px) {
+  .container {
+    display: inline;
+  }
+  .box1 {
+    padding: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .box1 h1 {
+    font-size: 2rem;
+  }
+  form input {
+    padding-right: 6rem;
+  }
+  #dabbu {
+    margin: 1rem;
+  }
+  button {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .box2 h6 {
+    margin-top: -4rem;
+  }
+}
